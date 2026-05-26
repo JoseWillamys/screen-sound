@@ -1,16 +1,16 @@
 ﻿Musica musica1 = new Musica();
-musica1.nome = "Roxane";
-musica1.artista = "The Police";
-musica1.duração = 273;
-musica1.disponivel = true;
-
-musica1.ExibirFichaTecnica();
+musica1.Nome = "Roxane";
+musica1.Artista = "The Police";
+musica1.Duração = 273;
+musica1.Disponivel = true;
+Console.WriteLine(musica1.DescricaoResumida);
 
 Musica musica2 = new Musica();
-musica2.nome = "Vertigo";
-musica2.artista = "U2";
-musica2.duração = 367;
-musica2.disponivel = false;
+musica2.Nome = "Vertigo";
+musica2.Artista = "U2";
+musica2.Duração = 367;
+musica2.Disponivel = false;
 
+musica1.ExibirFichaTecnica();
 Console.WriteLine("");
 musica2.ExibirFichaTecnica();
