@@ -5,7 +5,8 @@ Musica musica1 = new()
     Nome = "Prinson Song",
     Artista = "System of a Down",
     Duracao = 273,
-    Disponivel = true
+    Disponivel = true,
+    Genero = new Genero { Nome = "Rock" }
 };
 
 Musica musica2 = new()
@@ -13,7 +14,8 @@ Musica musica2 = new()
     Nome = "Chop Suey!",
     Artista = "System of a Down",
     Duracao = 210,
-    Disponivel = false
+    Disponivel = false,
+    Genero = new Genero { Nome = "Rock" }
 };
 
 Musica musica3 = new()
@@ -21,7 +23,8 @@ Musica musica3 = new()
     Nome = "Bounce",
     Artista = "System of a Down",
     Duracao = 114,
-    Disponivel = false
+    Disponivel = false,
+    Genero = new Genero { Nome = "Rock" }
 };
 
 Musica musica4 = new()
@@ -29,7 +32,8 @@ Musica musica4 = new()
     Nome = "Toxicity",
     Artista = "System of a Down",
     Duracao = 218,
-    Disponivel = false
+    Disponivel = false,
+    Genero = new Genero { Nome = "Rock" }
 };
 
 Musica musica5 = new()
@@ -37,7 +41,8 @@ Musica musica5 = new()
     Nome = "Aerials",
     Artista = "System of a Down",
     Duracao = 235,
-    Disponivel = false
+    Disponivel = false,
+    Genero = new Genero { Nome = "Rock" }
 };
 
 albumToxicity.AdicionarMusica(musica1);
