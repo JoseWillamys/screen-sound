@@ -1,4 +1,5 @@
 ﻿Album albumToxicity = new() { Nome = "Toxicity" };
+Banda systemOfADown = new() { Nome = "System of a Down" };
 
 Musica musica1 = new()
 {
@@ -51,4 +52,5 @@ albumToxicity.AdicionarMusica(musica3);
 albumToxicity.AdicionarMusica(musica4);
 albumToxicity.AdicionarMusica(musica5);
 
-albumToxicity.ExibirMusicas();
+systemOfADown.AdicionarAlbum(albumToxicity);
+systemOfADown.ExibirDiscografia();
