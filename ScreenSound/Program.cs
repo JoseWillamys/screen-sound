@@ -1,44 +1,35 @@
-﻿Banda systemOfADown = new() { Nome = "System of a Down" };
-Album albumToxicity = new() { Nome = "Toxicity" };
+﻿Genero rock = new("Rock 'n Roll");
+Banda systemOfADown = new("System of a Down");
+Album albumToxicity = new("Toxicity");
 
-Musica musica1 = new(systemOfADown)
+Musica musica1 = new(systemOfADown, "Prinson Song", rock)
 {
-    Nome = "Prinson Song",
     Duracao = 273,
     Disponivel = true,
-    Genero = new Genero { Nome = "Rock" }
 };
 
-Musica musica2 = new(systemOfADown)
+Musica musica2 = new(systemOfADown, "Chop Suey!", rock)
 {
-    Nome = "Chop Suey!",
     Duracao = 210,
     Disponivel = false,
-    Genero = new Genero { Nome = "Rock" }
 };
 
-Musica musica3 = new(systemOfADown)
+Musica musica3 = new(systemOfADown, "Bounce", rock)
 {
-    Nome = "Bounce",
     Duracao = 114,
-    Disponivel = false,
-    Genero = new Genero { Nome = "Rock" }
+    Disponivel = false
 };
 
-Musica musica4 = new(systemOfADown)
+Musica musica4 = new(systemOfADown, "Toxicity", rock)
 {
-    Nome = "Toxicity",
     Duracao = 218,
-    Disponivel = false,
-    Genero = new Genero { Nome = "Rock" }
+    Disponivel = false
 };
 
-Musica musica5 = new(systemOfADown)
+Musica musica5 = new(systemOfADown, "Aerials", rock)
 {
-    Nome = "Aerials",
     Duracao = 235,
-    Disponivel = false,
-    Genero = new Genero { Nome = "Rock" }
+    Disponivel = false
 };
 
 albumToxicity.AdicionarMusica(musica1);
@@ -46,6 +37,14 @@ albumToxicity.AdicionarMusica(musica2);
 albumToxicity.AdicionarMusica(musica3);
 albumToxicity.AdicionarMusica(musica4);
 albumToxicity.AdicionarMusica(musica5);
-
 systemOfADown.AdicionarAlbum(albumToxicity);
+
+
+musica1.ExibirFichaTecnica();
+musica2.ExibirFichaTecnica();
+musica3.ExibirFichaTecnica();
+musica4.ExibirFichaTecnica();
+musica5.ExibirFichaTecnica();
+
+albumToxicity.ExibirMusicas();
 systemOfADown.ExibirDiscografia();
