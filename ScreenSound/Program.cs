@@ -1,46 +1,41 @@
-﻿Album albumToxicity = new() { Nome = "Toxicity" };
-Banda systemOfADown = new() { Nome = "System of a Down" };
+﻿Banda systemOfADown = new() { Nome = "System of a Down" };
+Album albumToxicity = new() { Nome = "Toxicity" };
 
-Musica musica1 = new()
+Musica musica1 = new(systemOfADown)
 {
     Nome = "Prinson Song",
-    Artista = "System of a Down",
     Duracao = 273,
     Disponivel = true,
     Genero = new Genero { Nome = "Rock" }
 };
 
-Musica musica2 = new()
+Musica musica2 = new(systemOfADown)
 {
     Nome = "Chop Suey!",
-    Artista = "System of a Down",
     Duracao = 210,
     Disponivel = false,
     Genero = new Genero { Nome = "Rock" }
 };
 
-Musica musica3 = new()
+Musica musica3 = new(systemOfADown)
 {
     Nome = "Bounce",
-    Artista = "System of a Down",
     Duracao = 114,
     Disponivel = false,
     Genero = new Genero { Nome = "Rock" }
 };
 
-Musica musica4 = new()
+Musica musica4 = new(systemOfADown)
 {
     Nome = "Toxicity",
-    Artista = "System of a Down",
     Duracao = 218,
     Disponivel = false,
     Genero = new Genero { Nome = "Rock" }
 };
 
-Musica musica5 = new()
+Musica musica5 = new(systemOfADown)
 {
     Nome = "Aerials",
-    Artista = "System of a Down",
     Duracao = 235,
     Disponivel = false,
     Genero = new Genero { Nome = "Rock" }
