@@ -1,4 +1,5 @@
-﻿Genero rock = new("Rock 'n Roll");
+﻿/*
+Genero rock = new("Rock 'n Roll");
 Banda systemOfADown = new("System of a Down");
 Album albumToxicity = new("Toxicity");
 
@@ -48,3 +49,17 @@ musica5.ExibirFichaTecnica();
 
 albumToxicity.ExibirMusicas();
 systemOfADown.ExibirDiscografia();
+*/
+
+Episodio ep1 = new(1, "Corridas de rua", 20);
+ep1.AdicionarConvidados("Marta");
+ep1.AdicionarConvidados("Jonas");
+
+Episodio ep2 = new(2, "Impacto das Redes sociais no jovens", 35);
+ep2.AdicionarConvidados("Santana");
+ep2.AdicionarConvidados("Claudio");
+
+Podcast podcast = new("José Marcos", "Atualidades Modernas");
+podcast.AdicionarEpisodios(ep1);
+podcast.AdicionarEpisodios(ep2);
+podcast.ExibirDetalhes();
